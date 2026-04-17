@@ -1,4 +1,4 @@
-
+# Alle pizzas
 formaggi = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'gorgonzola': 1}
 extravaganza = {'tomatensaus': 1, 'mozzarella': 1, 'champignon': 1, 'ui': 1, 'paprika': 1, 'salami': 1, 'worst': 1}
 tartufo = {'tomatensaus': 1, 'mozzarella': 1, 'parmaham': 1, 'rucola': 1, 'truffelsaus': 1, 'pijnboompitten': 1}
@@ -36,15 +36,21 @@ tartufo_formaggi_miele = {"mozzarella": 1, 'brie': 1, 'gorgonzola': 1, 'truffelh
 cranberbrie = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'rucola': 1}
 kip_pa_pes = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'paprika': 1, 'pesto': 1}
 bbq_kip = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'ui': 1, 'bbq saus': 1}
-kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1}
+kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1, 'peterselie': 1}
+barbietola = {'mozzarella': 1, 'rode biet': 1, 'feta': 1, 'lente ui': 1}
+carciofi = {'tomatensaus': 1, 'mozzarella': 1, 'artisjok': 1}
 
+
+# pizzas list
 pizzas = [[formaggi], [extravaganza], [tartufo], [romeo], [tonno], [agnese], [limone], [pera],
           [mexicano], [pesto], [bruschetta], [verdure], [parma], [renzo], [nutella], [funghi],
           [carne], [spicy_salami], [shoarma], [pesca], [marmellata], [basilico], [autunno],
           [flammkuchen], [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
-          [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip], [kip_tandoori]]
+          [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip], [kip_tandoori],
+          [barbietola],[carciofi]]
 ingredients = set()
 
+# count ingredients
 for pizza in pizzas:
     for ingredient in pizza[0].keys():
         ingredients.add(ingredient)
@@ -56,28 +62,25 @@ with open('pizzas.txt', 'r') as file:
         number.strip()
         pizza.append(int(number))
 
-tasks = {'snijden': set(), 'raspen': set(), 'bak nodig voor': set(), 'bestek nodig voor': set(), 'bak in pan': set(),
-         'uitlekken': set(), 'maken': set()}
+# tasks renewed
+ingredient_effort = {'0': set(), '1': set(), '2': set()}
 
-def check_for_tasks(ingredient):
-    if ingredient in ['perzik', 'rosemarijn', 'worst', 'champignon', 'peer', 'groentemix', 'diverse hete pepers',
-                      'knoflook', 'vijgen', 'tortilla chips', 'salie', 'ui', 'mozzarella', 'gele paprika', 'tomaatjes']: # snijden
-        tasks['snijden'].add(ingredient)
-    elif ingredient in ['parmezaan', 'pistache']: # raspen
-        tasks['raspen'].add(ingredient)
-    elif ingredient in ['perzik', 'worst', 'champignon', 'peer', 'diverse hete pepers', 'knoflook', 'spinazie',
-                        'tomatensaus', 'vijgen', 'shoarma', 'salie', 'ui', 'mozzarella', 'gele paprika', 'tomaatjes']: # bak nodig voor
-        tasks['bak nodig voor'].add(ingredient)
-    elif ingredient in ['kappertjes', 'brie', 'burrata', 'paprika', 'olijven', 'truffelhoning', 'jam', 'nutella',
-                        'mais', 'knoflooksaus', 'geitenkaas', 'feta', 'tonijn', 'creme fraiche', 'gorgonzola']: # bestek nodig voor
-        tasks['bestek nodig voor'].add(ingredient)
-    elif ingredient in ['worst', 'spinazie', 'shoarma']: # bak in pan
-        tasks['bak in pan'].add(ingredient)
-    elif ingredient in ['burrata', 'paprika']: # uitlekken
-        tasks['uitlekken'].add(ingredient)
-    elif ingredient in ['bruschetta', 'pesto', 'guacamole', 'mex kruiden', 'basilicum olie',
-                        'citroen ricotta', 'pompoenpuree']: # maken
-        tasks['maken'].add(ingredient)
+def check_for_effort(ingredient):
+    if ingredient in ['cheddar','mex kruiden','nutella','geitenkaas','rosemarijn','olijven',
+                      'tortilla chips','olijfolie', 'truffelhoning', 'creme fraiche','salie',
+                      'cranberrie', 'knoflooksaus', 'truffelsaus', 'honing','gorgonzola', 'feta', 'ham', 'salami',
+                      'spek', 'pijnboompitten', 'brie', 'kappertjes', 'jam', 'rucola', 'burrata',
+                      'peterselie', 'basilicum', 'artisjok','parmaham', 'chili vlokken', 'tomatensaus',
+                      'bbq saus', 'mais',
+                      'balsamico',]: # dingen pakken
+        ingredient_effort['0'].add(ingredient)
+    elif ingredient in ['rode biet','pistache','paprika','diverse hete pepers','lente ui',
+                        'perzik','gele paprika', 'champignon', 'groentemix','knoflook','tonijn', 'tomaatjes', 'peer',
+                        'ui', 'mozzarella', 'parmezaan']: # dingen snijden/kleine actie
+        ingredient_effort['1'].add(ingredient)
+    elif ingredient in ['pompoenpuree','worst','citroen ricotta','shoarma','spinazie','basilicum olie','guacamole',
+                        'vijgen','kip','bruschetta','pesto','tandoori kip']: # medium actie, i.e. in pan
+        ingredient_effort['2'].add(ingredient)
 
 # ingredient subclass
 maakcitroenricotta = {'ricotta': 1, 'citroen': 1}
@@ -95,11 +98,10 @@ def make_ingredient(ingredient, amount):
             else:
                 shopping_list[sub_ingredient] = selected_ingredient[sub_ingredient]
 
-
 for pizza in pizzas:
     for iterations in range(pizza[1]):
         for ingredient in pizza[0].keys():
-            check_for_tasks(ingredient)
+            check_for_effort(ingredient)
             if ingredient in ['pesto', 'citroen ricotta', 'guacamole', 'bruschetta']:
                 make_ingredient(ingredient, pizza[0][ingredient])
             else:
@@ -108,6 +110,7 @@ for pizza in pizzas:
                 else:
                     shopping_list[ingredient] = pizza[0][ingredient]
 
+# make shopping list
 shopping_list = dict(sorted(shopping_list.items(), key=lambda item: item[1], reverse=True))
 with open('shoppinglist.txt', 'w') as file:
     file.write("SHOPPING LIST:\n")
@@ -115,9 +118,10 @@ with open('shoppinglist.txt', 'w') as file:
         value = int(shopping_list[item]) if shopping_list[item] % 1 == 0 else shopping_list[item]
         file.write(f'{value}x {item}\n')
 
+#make tasks file
 with open('tasks.txt', 'w') as file:
-    for task in tasks.keys():
+    for task in ingredient_effort.keys():
         file.write(f'{task}:\n')
-        for item in tasks[task]:
+        for item in ingredient_effort[task]:
             file.write(f"{item}\n")
         file.write('\n')
