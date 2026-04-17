@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Pizza generated files
+/shoppinglist.txt
+/tasks.txt
+/pizzas.txt

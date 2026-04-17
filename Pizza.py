@@ -36,12 +36,13 @@ tartufo_formaggi_miele = {"mozzarella": 1, 'brie': 1, 'gorgonzola': 1, 'truffelh
 cranberbrie = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'rucola': 1}
 kip_pa_pes = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'paprika': 1, 'pesto': 1}
 bbq_kip = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'ui': 1, 'bbq saus': 1}
+kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1}
 
 pizzas = [[formaggi], [extravaganza], [tartufo], [romeo], [tonno], [agnese], [limone], [pera],
           [mexicano], [pesto], [bruschetta], [verdure], [parma], [renzo], [nutella], [funghi],
           [carne], [spicy_salami], [shoarma], [pesca], [marmellata], [basilico], [autunno],
           [flammkuchen], [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
-          [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip]]
+          [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip], [kip_tandoori]]
 ingredients = set()
 
 for pizza in pizzas:
