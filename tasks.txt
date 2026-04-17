@@ -1,11 +1,11 @@
 snijden:
-diverse hete pepers
-ui
 mozzarella
-rosemarijn
-worst
-peer
 groentemix
+diverse hete pepers
+rosemarijn
+ui
+peer
+worst
 
 raspen:
 
@@ -13,13 +13,13 @@ bak nodig voor:
 tomatensaus
 
 bestek nodig voor:
-burrata
-tonijn
-creme fraiche
-nutella
+kappertjes
 brie
 gorgonzola
-kappertjes
+burrata
+creme fraiche
+tonijn
+nutella
 
 bak in pan:
 

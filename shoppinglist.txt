@@ -1,7 +1,7 @@
 SHOPPING LIST:
-16.5x mozzarella
-12x tomatensaus
-7x ui
+17.5x mozzarella
+13x tomatensaus
+8x ui
 5x rucola
 4x kappertjes
 3x brie
@@ -29,3 +29,4 @@ SHOPPING LIST:
 1x cranberrie
 1x kip
 1x bbq saus
+1x tandoori kip

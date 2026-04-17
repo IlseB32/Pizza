@@ -33,3 +33,4 @@ tartufo_formaggi_miele: 0
 cranberbrie: 1
 kip_pa_pes: 0
 bbq_kip: 1
+kip_tandoori: 1
