@@ -1,31 +1,45 @@
-snijden:
-mozzarella
-groentemix
-diverse hete pepers
-rosemarijn
-ui
-peer
-worst
-
-raspen:
-
-bak nodig voor:
-tomatensaus
-
-bestek nodig voor:
-kappertjes
-brie
+0:
 gorgonzola
 burrata
-creme fraiche
+artisjok
+jam
+feta
+ham
+honing
+rucola
+pijnboompitten
+cranberrie
+rosemarijn
+truffelsaus
+peterselie
+salami
+spek
+tomatensaus
+balsamico
+kappertjes
+olijfolie
+bbq saus
+parmaham
+basilicum
+brie
+
+1:
+lente ui
+peer
+groentemix
+rode biet
+mozzarella
 tonijn
-nutella
+pistache
+champignon
+ui
+diverse hete pepers
 
-bak in pan:
-
-uitlekken:
-
-maken:
-bruschetta
+2:
 pesto
+tandoori kip
+worst
+kip
+citroen ricotta
+bruschetta
 

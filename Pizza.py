@@ -22,7 +22,6 @@ marmellata = {'jam': 2, 'mozzarella': 1, 'spek': 1, 'rucola': 1, 'pistache': 1, 
 basilico = {'tomatensaus': 1, 'mozzarella': 1, 'basilicum': 2, 'basilicum olie': 1}
 autunno = {'pompoenpuree': 1, 'parmezaan': 1, 'mozzarella': 1, 'geitenkaas': 1, 'spek': 1, 'ui': 1, 'pistache': 1,
            'salie': 1, 'basilicum olie': 1}
-flammkuchen = {'mozzarella': 1.5, 'ui': 1, 'spek': 1, 'creme fraiche': 1, 'kappertjes': 1}
 greco = {'tomatensaus': 1, 'knoflook': 2, 'mozzarella': 1, 'olijven': 1, 'tomaatjes': 1, 'ui': 1, 'feta': 1}
 vuurvogel = {'tomatensaus': 1, 'mozzarella': 1, 'paprika': 1, 'gele paprika': 1, 'ui': 1}
 speziato = {'tomatensaus': 1, 'mozzarella': 1, 'diverse hete pepers': 1, 'ui': 1, 'ham': 1}
@@ -37,7 +36,7 @@ cranberbrie = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'r
 kip_pa_pes = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'paprika': 1, 'pesto': 1}
 bbq_kip = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'ui': 1, 'bbq saus': 1}
 kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1, 'peterselie': 1}
-barbietola = {'mozzarella': 1, 'rode biet': 1, 'feta': 1, 'lente ui': 1}
+barbietola = {'mozzarella': 1, 'rode biet': 1, 'feta': 1, 'lente ui': 1, 'honing': 1}
 carciofi = {'tomatensaus': 1, 'mozzarella': 1, 'artisjok': 1}
 
 
@@ -45,7 +44,7 @@ carciofi = {'tomatensaus': 1, 'mozzarella': 1, 'artisjok': 1}
 pizzas = [[formaggi], [extravaganza], [tartufo], [romeo], [tonno], [agnese], [limone], [pera],
           [mexicano], [pesto], [bruschetta], [verdure], [parma], [renzo], [nutella], [funghi],
           [carne], [spicy_salami], [shoarma], [pesca], [marmellata], [basilico], [autunno],
-          [flammkuchen], [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
+          [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
           [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip], [kip_tandoori],
           [barbietola],[carciofi]]
 ingredients = set()
