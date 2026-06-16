@@ -1,45 +1,38 @@
 0:
-gorgonzola
-burrata
-artisjok
-jam
-feta
-ham
-honing
-rucola
-pijnboompitten
-cranberrie
-rosemarijn
-truffelsaus
-peterselie
-salami
+nutella
+creme fraiche
 spek
-tomatensaus
-balsamico
+ham
 kappertjes
-olijfolie
-bbq saus
-parmaham
+tomatensaus
+burrata
+truffelsaus
+rucola
 basilicum
+parmaham
+balsamico
+honing
+bbq saus
 brie
+rosemarijn
+olijfolie
+cranberrie
+pijnboompitten
+gorgonzola
 
 1:
-lente ui
-peer
 groentemix
-rode biet
-mozzarella
-tonijn
-pistache
-champignon
-ui
 diverse hete pepers
+peer
+perzik
+mozzarella
+ui
+pistache
+tonijn
 
 2:
-pesto
-tandoori kip
 worst
+pesto
 kip
 citroen ricotta
-bruschetta
 

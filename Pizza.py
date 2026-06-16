@@ -1,3 +1,4 @@
+
 # Alle pizzas
 formaggi = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'gorgonzola': 1}
 extravaganza = {'tomatensaus': 1, 'mozzarella': 1, 'champignon': 1, 'ui': 1, 'paprika': 1, 'salami': 1, 'worst': 1}
@@ -32,12 +33,13 @@ nutella = {'nutella': 1}
 funghi = {'tomatensaus': 1, 'mozzarella': 1, 'champignon': 1}
 focaccia = {'rosemarijn': 1, 'olijfolie': 1}
 tartufo_formaggi_miele = {"mozzarella": 1, 'brie': 1, 'gorgonzola': 1, 'truffelhoning': 1, 'rucola': 1}
-cranberbrie = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'rucola': 1}
+ilae = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'rucola': 1}
 kip_pa_pes = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'paprika': 1, 'pesto': 1}
 bbq_kip = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'ui': 1, 'bbq saus': 1}
 kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1, 'peterselie': 1}
 barbietola = {'mozzarella': 1, 'rode biet': 1, 'feta': 1, 'lente ui': 1, 'honing': 1}
 carciofi = {'tomatensaus': 1, 'mozzarella': 1, 'artisjok': 1}
+svezia = {'tomatensaus': 1, 'mozzarella': 1,'cranberrie': 1,'köttbullar': 1,'jus': 1}
 
 
 # pizzas list
@@ -45,8 +47,8 @@ pizzas = [[formaggi], [extravaganza], [tartufo], [romeo], [tonno], [agnese], [li
           [mexicano], [pesto], [bruschetta], [verdure], [parma], [renzo], [nutella], [funghi],
           [carne], [spicy_salami], [shoarma], [pesca], [marmellata], [basilico], [autunno],
           [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
-          [focaccia], [tartufo_formaggi_miele],[cranberbrie],[kip_pa_pes], [bbq_kip], [kip_tandoori],
-          [barbietola],[carciofi]]
+          [focaccia], [tartufo_formaggi_miele],[ilae],[kip_pa_pes], [bbq_kip], [kip_tandoori],
+          [barbietola],[carciofi],[svezia]]
 ingredients = set()
 
 # count ingredients
@@ -61,7 +63,36 @@ with open('pizzas.txt', 'r') as file:
         number.strip()
         pizza.append(int(number))
 
+# count number of pizzas
+# Variables to keep track of our totals
+focaccia_total = 0
+nutella_total = 0
+other_total = 0
+
+with open('pizzas.txt', 'r') as file:
+    for line in file:
+        line = line.strip()
+        name, amount_str = line.split(':')
+        name = name.strip()
+        amount = int(amount_str.strip())
+
+        if name == 'focaccia':
+            focaccia_total += amount
+        elif name == 'nutella':
+            nutella_total += amount
+        else:
+            other_total += amount
+print(f"Focaccia: {focaccia_total}")
+print(f"Nutella:  {nutella_total}")
+print(f"Other:    {other_total}")
+print(f"Total Pizzas: {focaccia_total+nutella_total+other_total}")
+
+
+# Tasks
+
 # tasks renewed
+
+
 ingredient_effort = {'0': set(), '1': set(), '2': set()}
 
 def check_for_effort(ingredient):
