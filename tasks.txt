@@ -1,38 +1,38 @@
 0:
-truffelsaus
-cranberrie
-gorgonzola
-spek
-honing
-balsamico
-rosemarijn
-pijnboompitten
 parmaham
-olijfolie
-bbq saus
-rucola
-basilicum
+pijnboompitten
+balsamico
 kappertjes
-creme fraiche
+basilicum
+truffelsaus
 nutella
+cranberrie
+bbq saus
+olijfolie
 burrata
+gorgonzola
 tomatensaus
+spek
+creme fraiche
 brie
 ham
+rucola
+honing
+rosemarijn
 
 1:
-perzik
-groentemix
-mozzarella
-tonijn
-pistache
-ui
 diverse hete pepers
+groentemix
+perzik
+mozzarella
+pistache
+tonijn
 peer
+ui
 
 2:
-worst
 pesto
-kip
+worst
 citroen ricotta
+kip
 

@@ -26,7 +26,7 @@ vuurvogel: 0
 speziato: 2
 fico: 0
 spinaci: 0
-margarita: 0
+margarita: 1
 focaccia: 3
 tartufo_formaggi_miele: 0
 ilae: 2
