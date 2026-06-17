@@ -49,6 +49,7 @@ pizzas = [[formaggi], [extravaganza], [tartufo], [romeo], [tonno], [agnese], [li
           [greco], [vuurvogel], [speziato], [fico], [spinaci], [margarita],
           [focaccia], [tartufo_formaggi_miele],[ilae],[kip_pa_pes], [bbq_kip], [kip_tandoori],
           [barbietola],[carciofi],[svezia]]
+#empty set om aan te vullen
 ingredients = set()
 
 # count ingredients
@@ -88,11 +89,10 @@ print(f"Other:    {other_total}")
 print(f"Total Pizzas: {focaccia_total+nutella_total+other_total}")
 
 
+
+
+
 # Tasks
-
-# tasks renewed
-
-
 ingredient_effort = {'0': set(), '1': set(), '2': set()}
 
 def check_for_effort(ingredient):
