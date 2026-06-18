@@ -1,4 +1,4 @@
-formaggi: 0
+formaggi: 2
 extravaganza: 0
 tartufo: 2
 romeo: 2
@@ -15,7 +15,7 @@ renzo: 2
 nutella: 4
 funghi: 0
 carne: 0
-spicy_salami: 0
+spicy_salami: 2
 shoarma: 0
 pesca: 2
 marmellata: 0
@@ -23,7 +23,7 @@ basilico: 0
 autunno: 0
 greco: 0
 vuurvogel: 0
-speziato: 2
+speziato: 0
 fico: 0
 spinaci: 0
 margarita: 1
@@ -31,8 +31,8 @@ focaccia: 3
 tartufo_formaggi_miele: 0
 ilae: 2
 kip_pa_pes: 0
-bbq_kip: 2
-kip_tandoori: 0
+bbq_kip: 0
+kip_tandoori: 2
 barbietola: 0
 carciofi: 0
-svezia: 2
+svezia: 0

@@ -2,7 +2,7 @@
 # Alle pizzas
 formaggi = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'gorgonzola': 1}
 extravaganza = {'tomatensaus': 1, 'mozzarella': 1, 'champignon': 1, 'ui': 1, 'paprika': 1, 'salami': 1, 'worst': 1}
-tartufo = {'tomatensaus': 1, 'mozzarella': 1, 'parmaham': 1, 'rucola': 1, 'truffelsaus': 1, 'pijnboompitten': 1}
+tartufo = {'tomatensaus': 1, 'mozzarella': 1, 'parmaham': 1, 'rucola': 1, 'truffelsaus': 1}
 romeo = {'tomatensaus': 1, 'mozzarella': 1, 'worst': 1, 'ui': 1}
 tonno = {'tomatensaus': 1, 'mozzarella': 1, 'tonijn': 1, 'ui': 1, 'kappertjes': 1}
 agnese = {'mozzarella': 1.5, 'ui': 1, 'spek': 1, 'creme fraiche': 1, 'kappertjes': 1}
@@ -18,7 +18,7 @@ renzo = {'tomatensaus': 1, 'mozzarella': 1, 'ham': 1, 'pesto': 1}
 carne = {'tomatensaus': 1, 'mozzarella': 1, 'salami': 1, 'ham': 1, 'spek': 1, 'ui': 1}
 spicy_salami = {'tomatensaus': 1, 'mozzarella': 1, 'salami': 1, 'ui': 1, 'chili vlokken': 1}
 shoarma = {'tomatensaus': 1, 'mozzarella': 1, 'shoarma': 1, 'paprika': 1, 'knoflooksaus': 1, 'rucola': 1}
-pesca = {'mozzarella': 1.5, 'perzik': 1, 'basilicum': 1, 'burrata': 1, 'honing': 1, 'balsamico': 1}
+pesca = {'mozzarella': 1.5, 'perzik': 1, 'basilicum': 1, 'burrata': 1, 'honing': 1, 'rucola':1}
 marmellata = {'jam': 2, 'mozzarella': 1, 'spek': 1, 'rucola': 1, 'pistache': 1, 'balsamico': 1, 'honing': 1}
 basilico = {'tomatensaus': 1, 'mozzarella': 1, 'basilicum': 2, 'basilicum olie': 1}
 autunno = {'pompoenpuree': 1, 'parmezaan': 1, 'mozzarella': 1, 'geitenkaas': 1, 'spek': 1, 'ui': 1, 'pistache': 1,
@@ -31,12 +31,12 @@ spinaci = {'mozzarella': 1.5, 'spinazie': 2, 'ui': 1, 'feta': 1}
 margarita = {'tomatensaus': 1, 'mozzarella': 1, 'basilicum': 1}
 nutella = {'nutella': 1}
 funghi = {'tomatensaus': 1, 'mozzarella': 1, 'champignon': 1}
-focaccia = {'rosemarijn': 1, 'olijfolie': 1}
+focaccia = {'rozemarijn': 1, 'olijfolie': 1}
 tartufo_formaggi_miele = {"mozzarella": 1, 'brie': 1, 'gorgonzola': 1, 'truffelhoning': 1, 'rucola': 1}
 ilae = {'tomatensaus': 1, 'mozzarella': 1, 'brie': 1, 'cranberrie': 1, 'rucola': 1}
 kip_pa_pes = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'paprika': 1, 'pesto': 1}
 bbq_kip = {'tomatensaus': 1, 'mozzarella': 1, 'kip': 1, 'ui': 1, 'bbq saus': 1}
-kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1, 'peterselie': 1}
+kip_tandoori = {'tomatensaus': 1, 'mozzarella': 1, 'tandoori kip': 1, 'ui': 1, 'peterselie': 1, 'yoghurt': 1}
 barbietola = {'mozzarella': 1, 'rode biet': 1, 'feta': 1, 'lente ui': 1, 'honing': 1}
 carciofi = {'tomatensaus': 1, 'mozzarella': 1, 'artisjok': 1}
 svezia = {'tomatensaus': 1, 'mozzarella': 1,'cranberrie': 1,'köttbullar': 1,'jus': 1}
@@ -96,7 +96,7 @@ print(f"Total Pizzas: {focaccia_total+nutella_total+other_total}")
 ingredient_effort = {'0': set(), '1': set(), '2': set()}
 
 def check_for_effort(ingredient):
-    if ingredient in ['cheddar','mex kruiden','nutella','geitenkaas','rosemarijn','olijven',
+    if ingredient in ['cheddar','mex kruiden','nutella','geitenkaas','rozemarijn','olijven',
                       'tortilla chips','olijfolie', 'truffelhoning', 'creme fraiche','salie',
                       'cranberrie', 'knoflooksaus', 'truffelsaus', 'honing','gorgonzola', 'feta', 'ham', 'salami',
                       'spek', 'pijnboompitten', 'brie', 'kappertjes', 'jam', 'rucola', 'burrata',

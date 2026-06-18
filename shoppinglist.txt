@@ -1,19 +1,17 @@
 SHOPPING LIST:
 32x mozzarella
 23x tomatensaus
-10x rucola
+12x rucola
 10x ui
 7x basilicum
+6x brie
 6x kappertjes
 5x olijfolie
+4x gorgonzola
 4x parmaham
-4x pijnboompitten
-4x brie
 4x burrata
-4x ham
 4x nutella
-4x cranberrie
-3x rosemarijn
+3x rozemarijn
 2x truffelsaus
 2x worst
 2x tonijn
@@ -23,15 +21,16 @@ SHOPPING LIST:
 2x citroen
 2x pistache
 2x peer
-2x gorgonzola
 2x groentemix
+2x ham
+2x pijnboompitten
 2x parmezaan
+2x salami
+2x chili vlokken
 2x perzik
 2x honing
-2x balsamico
-2x diverse hete pepers
-2x kip
-2x bbq saus
-2x köttbullar
-2x jus
+2x cranberrie
+2x tandoori kip
+2x peterselie
+2x yoghurt
 1x knoflook
