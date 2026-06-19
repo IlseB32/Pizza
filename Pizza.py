@@ -57,7 +57,7 @@ for pizza in pizzas:
     for ingredient in pizza[0].keys():
         ingredients.add(ingredient)
 print(ingredients)
-with open('pizzas.txt', 'r') as file:
+with open('pizza_order.txt', 'r') as file:
     for pizza in pizzas:
         amount = file.readline()
         temp, number = amount.split(':')
@@ -70,7 +70,7 @@ focaccia_total = 0
 nutella_total = 0
 other_total = 0
 
-with open('pizzas.txt', 'r') as file:
+with open('pizza_order.txt', 'r') as file:
     for line in file:
         line = line.strip()
         name, amount_str = line.split(':')
