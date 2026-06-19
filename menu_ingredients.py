@@ -5,7 +5,7 @@ class pizza:
         self.ingredients = ingredients
 
     def is_vegetarian(self):
-        # List of all meats and fish
+        # List of all meats and fish - these items make it non-vegetarian
         meats = ['salami', 'worst', 'parmaham', 'spek', 'kip', 'tonijn',
                  'shoarma', 'ham', 'köttbullar', 'tandoori kip','coppa','gehakt']
         for item in self.ingredients.keys():
@@ -14,7 +14,7 @@ class pizza:
         return True
 
     def is_pescetarian(self):
-        # List of all meats and fish
+        # List of all meats - these items make it non-pescetarian
         meats = ['salami', 'worst', 'parmaham', 'spek', 'kip',
                  'shoarma', 'ham', 'köttbullar', 'tandoori kip','coppa','gehakt']
         for item in self.ingredients.keys():
@@ -23,11 +23,33 @@ class pizza:
         return True
 
     def possible_halal(self):
+        # List of all pig meats - these items make it non-halal
         haram_items = ['parmaham', 'spek', 'ham', 'shoarma', 'köttbullar']
+        # notice that salami and worstje arent included because beef/chicken options exist
         for item in self.ingredients.keys():
             if item in haram_items:
                 return False
         return True
+
+    def detailed_ingredients(self):
+        sub_recipes = {
+            'tandoori kip': {'kippendijen': 2, 'tandoori kruiden': 1, 'yoghurt': 1},
+            'pesto': {'verse basilicum': 2, 'pijnboompitten': 1, 'parmezaan': 1, 'knoflook': 1},
+            'shoarma': {'vleesreepjes': 2, 'shoarmakruiden': 1},
+            'bruschetta': {'tomaten': 2, 'knoflook': 1, 'olijfolie': 1, 'basilicum': 1}
+        }
+        detailed_dict = {}
+        for item, amount in self.ingredients.items():
+            if item in sub_recipes:
+                # It is a compound item, break it down
+                for sub_item, sub_amount in sub_recipes[item].items():
+                    # .get(sub_item, 0) means: "Fetch the current amount, or default to 0 if it doesn't exist yet"
+                    detailed_dict[sub_item] = detailed_dict.get(sub_item, 0) + (sub_amount * amount)
+            else:
+                # It is a standard ingredient
+                detailed_dict[item] = detailed_dict.get(item, 0) + amount
+
+        return detailed_dict
 
 # Define pizzas with ingredients
 pizza_menu = {
