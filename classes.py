@@ -5,19 +5,20 @@ class IncompatibleIngredients(Exception):
 
 # base class
 class Ingredient:
-    def __init__(self, name, portion, portion_type, ingredients=None, handmade=True,
-                 meat=False, fish=False, halal=False):
+    def __init__(self, name, portion, portion_type, sub_ingredients=None, handmade=True,
+                 meat=False, fish=False, halal=False, aisle="other"):
 
         self.name = name
+        self.aisle = aisle
 
         # assume handmade if there are sub_ingredients
         self.handmade = handmade
-        self.ingredients = ingredients
-        if ingredients is None:
+        self.ingredients = sub_ingredients
+        if sub_ingredients is None:
             self.handmade = False
 
         self.portion = portion
-        self.portion_type = portion_type  # g, ml, x (for amount)
+        self.portion_type = portion_type  # g, ml, x (for amount), etc
 
         # if not handmade, provided tags suffice. otherwise check children
         self.vegetarian = not meat and not fish
@@ -38,33 +39,46 @@ class Ingredient:
         return True
 
     # Recursively creates list of ingredients
-    def get_ingredients(self) -> list:
+    def get_ingredients(self):
         if not self.handmade:
-            return [copy.copy(self)]
+            return {self.aisle: [copy.copy(self)]}
 
-        value = []
+        value = {}
         for ingredient in self.ingredients:
-            for ing_ing in ingredient.get_ingredients():
-                match_found = False
-                for target in value:
-                    try:
-                        target += ing_ing
-                        match_found = True
-                        break
-                    except IncompatibleIngredients:
-                        pass
+            sub_dict = ingredient.get_ingredients()
+            for sub_aisle in sub_dict:
+                for ing_ing in sub_dict[sub_aisle]:
+                    match_found = False
+                    if ing_ing.aisle in value:
+                        for target in value[ing_ing.aisle]:
+                            try:
+                                target += ing_ing
+                                match_found = True
+                                break
+                            except IncompatibleIngredients:
+                                pass
 
-                if not match_found:
-                    value.append(ing_ing)
+                    if not match_found:
+                        if ing_ing.aisle in value:
+                            value[ing_ing.aisle].append(ing_ing)
+                        else:
+                            value[ing_ing.aisle] = [ing_ing]
 
         return value
+
+    def set_handmade(self, input):
+        cop = copy.copy(self)
+        cop.handmade = input
+        return cop
 
     # pretty prints the list of ingredients
     def print_ingredients(self):
         ingredients = self.get_ingredients()
-        print(f"--- Ingredients for {self.name} ---\n")
-        for ing in ingredients:
-            print(ing)
+        print(f"--- Ingredients for {self.name} ---")
+        for aisle in ingredients.keys():
+            print(f"\n-- {aisle} --")
+            for ing in ingredients[aisle]:
+                print(ing)
         return
 
     # makes it possible to multiply by int or float
@@ -79,7 +93,7 @@ class Ingredient:
         return new_ing
 
     # makes it possible to add ingredients of same type together
-    def __add__(self, other : Ingredient):
+    def __add__(self, other : 'Ingredient'):
         if not self.handmade and not other.handmade:
             if self.name == other.name:
                 if self.portion_type == other.portion_type:
@@ -90,7 +104,7 @@ class Ingredient:
     # prints what the ingredient is and its sub-ingredients
     def __repr__(self):
         if not self.handmade:
-            return f"{self.name}: {self.portion}{self.portion_type}"
+            return f"{self.name}: {round(self.portion, 3)}{self.portion_type}"
         return f"{self.name}: {[ing for ing in self.ingredients]}"
 
 # extends Ingredient
@@ -100,7 +114,7 @@ class Pizza(Ingredient):
             name=name,
             portion=1,
             portion_type="x",
-            ingredients=ingredients,
+            sub_ingredients=ingredients,
             handmade=True
         )
 
@@ -111,7 +125,7 @@ class Menu(Ingredient):
             name="Menu",
             portion=None,
             portion_type=None,
-            ingredients=pizzas,
+            sub_ingredients=pizzas,
             handmade=True
         )
 
