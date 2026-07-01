@@ -1,35 +1,35 @@
 name,portion,portion_type,sub_ingredients,handmade,meat,fish,halal,aisle
-tomatensaus,,,,,,,,
-truffelsaus,,,,,,,,
-creme fraiche,,,,,,,,
-balsamico,,,,,,,,
-nutella,,,,,,,,
-olijven,,,,,,,,
-rozemarijn,,,,,,,,
-groentemix,,,,,,,,
-lente ui,,,,,,,,
-champignon,,,,,,,,
-tomaatjes,,,,,,,,
-gorgonzola,,,,,,,,
-olijfolie,,,,,,,,
-parmaham,,,,,,,,
-mozzarella,,,,,,,,
-ui,,,,,,,,
-rode biet,,,,,,,,
-knoflook,,,,,,,,
-peterselie,,,,,,,,
-artisjok,,,,,,,,
-tandoori kip,,,"kippendij*2,yoghurt*0.4,citroen*0.2,garlic paste*0.2, ginger paste*0.2, tandoori masala*0.4, koriander poeder*0.2, kashmiri poeder*0.2, chilli poeder*0.2",,,,,
-mais,,,,,,,,
-guacamole,,,"avocado, diverse hete pepers, tomaatjes, peterselie, citroen",,,,,
-spinazie,,,,,,,,
-ham,,,,,,,,
-cheddar,,,,,,,,
-knoflooksaus,,,,,,,,
-parmezaan,,,,,,,,
-burrata,,,,,,,,
-bruschetta,,,,,,,,
-citroen ricotta,,,"ricotta, citroen",,,,,
+tomatensaus,60,gr,,,,,1,
+truffelsaus,1,drizzle,,,,,1,
+creme fraiche,50,gr,,,,,1,zuivel
+balsamico,1,drizzle,,,,,1,kruiden
+nutella,80,gr,,,,,1,
+olijven,4,olijven,,,,,1,gft
+rozemarijn,1,takje,,,,,1,gft
+groentemix,1,mix,,,,,1,gft
+lente ui,0.5,stengel,,,,,1,gft
+champignon,3,stuks,,,,,1,gft
+tomaatjes,8,tomaatjes,,,,,1,gft
+gorgonzola,60,gr,,,,,,zuivel
+olijfolie,1,Tbsp,,,,,1,kruiden
+parmaham,3,plakken,,,1,,0,vlees
+mozzarella,0.1,blok,,,,,1,makro
+ui,0.25,ui,,,,,1,gft
+rode biet,2,bietjes,,,,,1,gft
+knoflook,1,teen,,,,,1,gft
+peterselie,1,takje,,,,,1,gft
+artisjok,60,gr,,,,,1,
+tandoori kip,1,,"kippendij*2,yoghurt*0.4,citroen*0.2,garlic paste*0.2, ginger paste*0.2, tandoori masala*0.4, koriander poeder*0.2, kashmiri poeder*0.2, chilli poeder*0.2",,1,,,
+mais,50,gr,,,,,1,
+guacamole,1,,"avocado, diverse hete pepers, tomaatjes, peterselie, citroen",,,,1,
+spinazie,80,gr,,,,,1,gft
+ham,5,plakjes,,,1,,0,vlees
+cheddar,2,plakjes,,,,,1,zuivel
+knoflooksaus,0.25,bakje,,,,,1,vlees
+parmezaan,25,gr,,,,,0,zuivel
+burrata,0.5,burrata,,,,,,zuivel
+bruschetta,1,,"tomaat*2,basilicum*2,knoflook,olijfolie",,,,,
+citroen ricotta,1,,"ricotta, citroen",,,,,
 basilicum,1,takje,,,,,1,gft
 mex kruiden,1,Tbsp,,,,,1,kruiden
 perzik,1,stuk,,,,,1,gft
