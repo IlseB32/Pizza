@@ -30,15 +30,15 @@ parmezaan,,,,,,,,
 burrata,,,,,,,,
 bruschetta,,,,,,,,
 citroen ricotta,,,"ricotta, citroen",,,,,
-basilicum,,,,,,,,
-mex kruiden,,,,,,,,
-perzik,,,,,,,,
-kappertjes,,,,,,,,
-bbq saus,,,,,,,,
-jam,,,,,,,,
-peer,,,,,,,,
-gele paprika,,,,,,,,
-pesto,1,pesto,"basilicum*2, parmezaan, olijfolie, pistache, knoflook",,,,,
+basilicum,1,takje,,,,,1,gft
+mex kruiden,1,Tbsp,,,,,1,kruiden
+perzik,1,stuk,,,,,1,gft
+kappertjes,.1,potje,,,,,1,
+bbq saus,3,Tbsp,,,,,,
+jam,2,Tbsp,,,,,,
+peer,.3,stuk,,,,,1,gft
+gele paprika,0.3,stuk,,,,,1,gft
+pesto,1,pesto,"basilicum*3, parmezaan, olijfolie, pistache, knoflook*0.5",,,,1,
 basilicum olie,1,drizzle,,,,,1,
 brie,75,gr,,,,,1,zuivel
 rucola,8,gr,,,,,1,gft
