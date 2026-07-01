@@ -1,37 +1,69 @@
 0:
-gorgonzola
-rucola
-kappertjes
-basilicum
-olijfolie
-cranberrie
-creme fraiche
-nutella
-rozemarijn
-truffelsaus
-salami
-ham
-parmaham
-honing
-chili vlokken
-spek
-peterselie
-brie
 tomatensaus
+truffelsaus
+creme fraiche
+balsamico
+nutella
+olijven
+rozemarijn
+gorgonzola
+olijfolie
+parmaham
+peterselie
+artisjok
+mais
+ham
+cheddar
+knoflooksaus
 burrata
+basilicum
+mex kruiden
+kappertjes
+bbq saus
+jam
+brie
+rucola
+chili vlokken
+geitenkaas
+pijnboompitten
+honing
+salie
+feta
+truffelhoning
+salami
+spek
+tortilla chips
+cranberrie
 
 1:
-tonijn
-mozzarella
-pistache
-ui
-perzik
-groentemix
+rode biet
+lente ui
 peer
+groentemix
+parmezaan
+gele paprika
+champignon
+tomaatjes
+mozzarella
+paprika
+ui
+diverse hete pepers
+knoflook
+perzik
+pistache
+tonijn
 
 2:
+guacamole
+spinazie
 pesto
-citroen ricotta
+pompoenpuree
+vijgen
+basilicum olie
 worst
+shoarma
+kip
+bruschetta
+citroen ricotta
 tandoori kip
 
