@@ -114,3 +114,6 @@ class Menu(Ingredient):
             ingredients=pizzas,
             handmade=True
         )
+
+    def add_pizzas(self, pizzas):
+        self.ingredients.append(pizzas)
